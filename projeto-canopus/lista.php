@@ -44,7 +44,7 @@ session_commit();
 </table>
     </br> </br> </br>
 <form id="admCadastro" action="inseridados.php" method="POST" enctype="multipart/form-data">
-        <h3>Cadastar de Fotos</h3>
+        <h3>Cadastar Fotos</h3>
         <label for="">ID:</label><input type="number" readonly></br>
         <label for="">Foto</label><input type="file" name="Nfoto"></br>
         <label for="">Titulo</label><input type="text" name="Ntitulo"></br>
