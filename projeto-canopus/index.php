@@ -31,9 +31,9 @@
         <label onclick="sair()">sair</label>
     </form>
    
-    <form id="login-usuario" >
+    <form id="login-usuario" method="POST" action="autenticarusuario.php"  >
         <label for="nome">Login Usuário :</label><Input type="text" name="loginUsuario"></Input>
-        <label for="">Senha :</label><Input type="text" id="usuarioSenha"></Input>
+        <label for="">Senha :</label><Input type="text" id="usuarioSenha" name="loginsenha"></Input>
         <input type="submit" value="Enviar">
         <label onclick="sair()">sair</label>
     </form>

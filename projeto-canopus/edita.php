@@ -17,8 +17,7 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alterar cadastro</title>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+   
 </head>
 <body>
 <form id="admCadastro" action="atualizar.php" method="POST"enctype="multipart/form-data">
@@ -31,7 +30,7 @@
     <label for="">Foto</label> <input type="file" name="Nfoto">
     </br></br></br>
 
-<label for="">ID:</label> <input type="number" name="ra" value="<?php echo $row_dados['id'];?>">
+    <label for="">ID:</label> <input type="number" name="ra" value="<?php echo $row_dados['id'];?>">
 
     <label for="">Titulo</label> <input type="text" name="titulo" value="<?php echo $row_dados['titulo']; ?>">
 

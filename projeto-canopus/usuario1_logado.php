@@ -47,9 +47,7 @@
 					</br></br>
 				<div class="button">
             <!--Botão do login do ADM-->
-            <button>Administrador</button>
-              <a href="http://localhost/projeto-canopus/lista.php"><button for="">Consulta fotos</button>
-              </a>          <!--Botão do login do usuario -->
+                   <!--Botão do login do usuario -->
             <a href="http://localhost/projeto-canopus/index.php"><button>Sair</button></a>
     		</div>  
       </div>

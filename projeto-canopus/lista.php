@@ -12,12 +12,18 @@ session_commit();
 	<head>
 		<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
 		<title>CONSULTA</title>
 	</head>
     <body>
+        <div class="titleformlist">
+            <h3>Fotos Cadastradas</h3> <h3>Cadastar de Fotos</h3>
+        </div>
+        <div class="formLista">
 <table>
-    <h3>Fotos Cadastradas</h3>
+
     <tr>
+    
         <td class="">ID</td>
         <td class="">Foto</td>
         <td class="">Titulo</td>
@@ -42,16 +48,15 @@ session_commit();
             </tr>
         <?php } ?>	
 </table>
-    </br> </br> </br>
 <form id="admCadastro" action="inseridados.php" method="POST" enctype="multipart/form-data">
-        <h3>Cadastar de Fotos</h3>
-        <label for="">ID:</label><input type="number" readonly></br>
-        <label for="">Foto</label><input type="file" name="Nfoto"></br>
-        <label for="">Titulo</label><input type="text" name="Ntitulo"></br>
+        
+        <label for="">ID:</label><input type="number" readonly></br></br>
+        <label for="">Foto</label><input type="file" name="Nfoto"></br></br>
+        <label for="">Titulo</label><input type="text" name="Ntitulo"></br></br>
         <label for="">descrição</label><input type="text" name="Ndescricao">
         <input type="submit" value="Enviar"><br><br>
     </form>
-
+    </div>
 </body>
 <script type="text/javascript" charset="utf-8" src="script.js" defer></script>
 </html>
