@@ -10,10 +10,9 @@
 		header('location:index.php');
 	}else{
 		//Buscar dados no banco de dados
+		
 	$buscar = "SELECT * FROM tb_login1 WHERE email ='$Email'";
-	
 	$resultado = mysqli_query($con,$buscar);
-
 	while ($dados = mysqli_fetch_array($resultado) ) {
 			$matricula=$dados['id'];
 			$email_adm=$dados['email'];

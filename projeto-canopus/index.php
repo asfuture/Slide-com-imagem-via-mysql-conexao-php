@@ -6,7 +6,6 @@
    session_commit();
 ?>
 
-
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -23,23 +22,20 @@
         <!--Botão do login do usuario -->
          <button onclick="usuario(2)" >Usuário comum</button></a> 
     </div>
-
+<!--Form do login adm -->
     <form id="login-adm" method="POST" action="autenticarlogin_adm.php" >
         <label for="nome">Login Administrador :</label><Input type="text" name="loginadm"></Input>
         <label for="">Senha :</label><Input type="text" name="loginsenha"></Input>
         <input type="submit" value="Enviar">
         <label onclick="sair()">sair</label>
     </form>
-   
+   <!--Form do login usuário -->
     <form id="login-usuario" method="POST" action="autenticarusuario.php"  >
         <label for="nome">Login Usuário :</label><Input type="text" name="loginUsuario"></Input>
         <label for="">Senha :</label><Input type="text" id="usuarioSenha" name="loginsenha"></Input>
         <input type="submit" value="Enviar">
         <label onclick="sair()">sair</label>
     </form>
-
 </body>
-
-
 <script type="text/javascript" charset="utf-8" src="script.js" defer></script>
 </html>

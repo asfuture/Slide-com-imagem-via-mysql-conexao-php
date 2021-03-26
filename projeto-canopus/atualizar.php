@@ -1,11 +1,10 @@
 <?php
 include('conecta.php');
-
-	//Recebendo dados enviado do formulário editar
+	//Recebendo dados do formulário editar
     $id = $_POST['ra'];
 	$Titulo = $_POST['titulo'];
 	$Descricao = $_POST['descricao'];
-	
+
 			//Receber a imagem
 		if (isset($_FILES['Nfoto'])) {
 			$extensao = strtolower(substr($_FILES['Nfoto']['name'],-4));
@@ -20,7 +19,6 @@ include('conecta.php');
 				 {		
 					$img_slide= $dado_['foto'];			
 			   }
-			   
 			   //excluir foto do diretorio
 			   unlink("imgs/".$img_slide);
 	   
@@ -42,5 +40,4 @@ include('conecta.php');
    		 //Retornando a pagina Lista
    		header('location:lista.php');
     	mysqli_close($con);
-
 ?>

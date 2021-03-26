@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 26-Mar-2021 às 08:59
+-- Tempo de geração: 26-Mar-2021 às 12:55
 -- Versão do servidor: 8.0.21
 -- versão do PHP: 7.3.21
 
@@ -35,21 +35,21 @@ CREATE TABLE IF NOT EXISTS `tb_fotos` (
   `foto` varchar(100) NOT NULL,
   `data` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=52 DEFAULT CHARSET=latin2;
+) ENGINE=MyISAM AUTO_INCREMENT=53 DEFAULT CHARSET=latin2;
 
 --
 -- Extraindo dados da tabela `tb_fotos`
 --
 
 INSERT INTO `tb_fotos` (`id`, `titulo`, `descricao`, `foto`, `data`) VALUES
-(51, 'alex', 'O som do mar ', 'a9b1893c7958631b96b561ad80841e98.jpg', '2021-03-26 05:41:54'),
-(50, 'alex', 'A vida é', '2dd4f002875799bedfeff157673dccc1.jpg', '2021-03-26 04:47:39'),
+(51, 'Florestas', 'Caminho das arvores', 'ec9e067c57b4b93264b46491b5480733.jpg', '2021-03-26 09:46:31'),
+(50, 'Céu azul', 'A esta para todos', 'ac4f11a4971480afdb451209ecd54456.jpg', '2021-03-26 09:47:18'),
 (42, 'alex', 'O som do mar ', '2d5e0a7b7ecc32fd43cd5ac055bb8174.jpg', '2021-03-26 04:40:46'),
 (38, 'teste hub', 'hub brasil', '2e0df39c081650afc9b78b9582a13e7e.jpg', '2021-03-26 04:40:58'),
-(45, 'alex', 'fotos bd', '18f08ebffa35e441f8b0329f03f2c94d.jpg', '2021-03-26 04:42:30'),
 (46, 'alex', 'O som do mar ', '135f6516cbc1197897df18c0316cccef.jpg', '2021-03-26 04:44:08'),
 (47, 'alex', 'Deus é o paraiso', '9d49c0a709db812ed1ff18bce6eb4acb.jpg', '2021-03-26 04:45:05'),
-(48, 'Deus ', 'A vida é', '5628f17a99137a42bcf1804147128cb2.jpg', '2021-03-26 04:46:22');
+(48, 'Deus ', 'A vida é', '5628f17a99137a42bcf1804147128cb2.jpg', '2021-03-26 04:46:22'),
+(52, 'teste', '3', 'db46bb6d6c2fe037f093849ceacc37b7.jpg', '2021-03-26 09:16:12');
 
 -- --------------------------------------------------------
 

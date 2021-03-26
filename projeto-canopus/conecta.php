@@ -1,5 +1,5 @@
 <?php
-//Conexão do banco de dados com o cadastro-alunos.
+//Conexão do banco de dados .
 	$Server = "localhost";
 	$User = "root";
 	$Password = "";

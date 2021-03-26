@@ -12,7 +12,6 @@
     <meta http-equiv="X-UA-Compatible" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-	
     <title>Projeto Canopus</title>
 </head>
 <body>
@@ -27,16 +26,18 @@
 							if($controle_ativo == 2){ ?>
 								<li class="item active">
 									<img src="imgs/<?php echo $row_carousel['foto']; ?>" alt="<?php echo $row_carousel['titulo']; ?>">
-									<input type="text" value="<?php echo $row_carousel['titulo']; ?>"readonly></input>
-
+									<label> Titulo</label>
+									<input type="text" value="<?php echo $row_carousel['titulo']; ?>"readonly></input></br>
+									<label> Descrição</label>
 									<input type="text" value="<?php echo $row_carousel['descricao']; ?>" readonly></input>
 								</li><?php
 								$controle_ativo = 1;
 							}else{ ?>
 								<li class="item">
 									<img src="imgs/<?php echo $row_carousel['foto']; ?>" alt="<?php echo $row_carousel['titulo']; ?>">
-                                    <input type="text" value="<?php echo $row_carousel['titulo']; ?>" readonly></input>
-
+									<label> Titulo</label>
+                                    <input type="text" value="<?php echo $row_carousel['titulo']; ?>" readonly></input></br>
+									<label> Descrição</label>
 									<input type="text" value="<?php echo $row_carousel['descricao']; ?>"readonly></input>
 							</li>
                            <?php
@@ -45,7 +46,7 @@
 					?>					
 				</ul>
 					</br></br>
-				<div class="button">
+				<div class="divbutton">
             <!--Botão do login do ADM-->
             <button>Administrador</button>
               <a href="http://localhost/projeto-canopus/lista.php"><button for="">Consulta fotos</button>
@@ -53,8 +54,6 @@
             <a href="http://localhost/projeto-canopus/index.php"><button>Sair</button></a>
     		</div>  
       </div>
-
-    
 	<script type="text/javascript" charset="utf-8" src="script.js" defer></script>	  
 <body>
 </html>

@@ -18,7 +18,6 @@ include('conecta.php');
 				echo "Error".$incluir."<br>".$con->error;
 			}
 		}
-	
 		header('location:lista.php?');
 		mysqli_close($con);
 ?>

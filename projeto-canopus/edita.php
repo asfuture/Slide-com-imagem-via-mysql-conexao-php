@@ -20,6 +20,7 @@
    
 </head>
 <body>
+<!--formulário editar-->
 <form id="admCadastro" action="atualizar.php" method="POST"enctype="multipart/form-data">
     <h3>Editar Cadastro de Fotos</h3>
    

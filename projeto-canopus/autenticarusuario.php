@@ -11,9 +11,7 @@
 	}else{
 		//Buscar dados no banco de dados
 	$buscar = "SELECT * FROM tb_login WHERE email ='$Email_usuario'";
-	
 	$resultado = mysqli_query($con,$buscar);
-
 	while ($dados = mysqli_fetch_array($resultado) ) {
 			$matricula=$dados['id'];
 			$email_usu=$dados['email'];
